@@ -1,0 +1,23 @@
+
+<div>
+	<app-pagination [page]="page" [total]="total" [totalPages]="totalPages" (mudouPagina)="mudouPagina($event)">
+		<div class="row">
+		<div class="total-val">Total no of {{total}} Employees</div>
+			<div class="work-emp">
+				<div class="col-sm-4" *ngFor="let usuario of usuarios">
+					<div class="work-im">
+						<div class="custom-image">
+							<button routerLink="/details/{{usuario.id}}">
+								<img src={{usuario.avatar}}>
+							</button>
+						</div>
+						<div class="emp-name">
+							{{usuario.first_name}}   {{usuario.last_name}}
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+			
+	</app-pagination>
+</div>

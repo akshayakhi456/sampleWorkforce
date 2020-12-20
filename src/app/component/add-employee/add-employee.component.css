@@ -1,0 +1,20 @@
+.add-details {
+    padding-top: 59px;
+    padding-bottom: 51px;
+}
+.add-frm-details {
+    padding-top: 59px;
+}
+.button4 {
+    background: #41cbea;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Segoe UI";
+    color: #FFFFFF;
+    border: none;
+    padding-left: 15px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    border-radius: 5px;
+}

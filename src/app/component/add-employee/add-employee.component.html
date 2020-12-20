@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="add-details">
+                <div *ngIf="imageUrl; else elseBlock">
+                    <img src={{imageUrl}} width="250px" height="300px">
+                </div>
+                <ng-template #elseBlock>
+                    <img src="../../../assets/avatar.PNG">
+                </ng-template>
+            </div>
+        </div>
+        <div class="col-sm-8">
+            <div class="add-frm-details">
+                <form class="form-horizontal"  [formGroup]="addEmployeeForm">
+                    <div class="form-group row">
+                        <label class="col-sm-3">First Name</label>
+                        <div class="col-sm-5">
+                            <input class="form-control" type="text" formControlName="firstName"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3">Last Name</label>
+                        <div class="col-sm-5">
+                            <input class="form-control" type="text" formControlName="lastName"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3">Email Address</label>
+                        <div class="col-sm-5">
+                            <input class="form-control" type="text" formControlName="email"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3">Upload Photo</label>
+                        <div class="col-sm-5">
+                        <input type="text" class="form-control" formControlName="photo" (change)="ChangeUrl($event.target.value)"/>
+                        </div>
+                    </div>
+                    <button type="button" class="button4" (click)="AddEmployee()">Add Employee</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

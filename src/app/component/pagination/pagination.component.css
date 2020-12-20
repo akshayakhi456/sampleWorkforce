@@ -1,0 +1,14 @@
+.page-nav {
+    /* border-bottom: 2px solid lightgray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; */
+    padding-right: 159px;
+    padding-top: 26px;
+}
+.page-nav-two {
+    /* border-bottom: 2px solid lightgray; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}

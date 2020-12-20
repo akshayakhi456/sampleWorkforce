@@ -1,0 +1,31 @@
+
+.work-emp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* padding: 10px; */
+    padding-left: 212px;
+    /* margin-top: 100px; */
+}
+.work-im {
+    border: 1px solid #41cbea;
+    margin-bottom: 20px;
+    color: white;
+    display: inline-block;
+}
+.custom-image {
+    display: inline-block;
+}
+.custom-image button {
+    border: none;
+}
+.emp-name {
+    text-align: center;
+    background: #41cbea;
+}
+
+.total-val{
+    display: flex;
+    margin-top: 20px;
+    margin-left: auto;
+}
